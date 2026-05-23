@@ -30,6 +30,29 @@ Use this repo if you are an intern, fresher, junior developer, mid-level enginee
 | Incidents | Study realistic production incident case studies | [production-incidents/README.md](production-incidents/README.md) |
 | Online Compilers | Practice code quickly in browser | [resources/online-compilers.md](resources/online-compilers.md) |
 
+## Learning Flow Diagram
+
+```mermaid
+flowchart TD
+  Start([Start Here]) --> Foundations[Frontend Foundations<br/>HTML, CSS, JavaScript]
+  Foundations --> TS[TypeScript<br/>Types, contracts, safer code]
+  TS --> React[React.js<br/>Components, state, hooks, performance]
+  React --> Next[Next.js<br/>CSR, SSR, SSG, ISR, auth]
+  Next --> Backend[Backend Foundations<br/>Node.js, Express, REST, GraphQL]
+  Backend --> Auth[Auth and Security<br/>JWT, sessions, OAuth, RBAC]
+  Auth --> DB[Database<br/>SQL, MySQL, PostgreSQL, MongoDB, Redis]
+  DB --> DevOps[DevOps and Cloud<br/>Git, CI/CD, Docker, AWS]
+  DevOps --> SystemDesign[System Design<br/>HLD, LLD, APIs, scaling, tradeoffs]
+  SystemDesign --> DSA[DSA in JavaScript<br/>Patterns and coding rounds]
+  DSA --> Debugging[Production Debugging<br/>Playbooks and incidents]
+  Debugging --> Mock[Mock Interviews<br/>Technical, system design, HR]
+  Mock --> Ready([Interview Ready])
+
+  Foundations -. practice .-> Compilers[Online Compilers]
+  DSA -. daily .-> Compilers
+  DB -. SQL practice .-> Compilers
+```
+
 ## 100 Question Practice Sets
 
 - [JavaScript 100 interview questions](frontend/javascript/100-interview-questions.md)
