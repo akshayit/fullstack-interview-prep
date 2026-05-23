@@ -1,0 +1,12 @@
+{
+  "name": "fullstack-interview-prep",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interview-focused fullstack development preparation repository.",
+  "scripts": {
+    "check": "node scripts/check-repo.js"
+  },
+  "license": "MIT"
+}
+

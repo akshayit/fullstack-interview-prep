@@ -1,0 +1,20 @@
+name: markdown-check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repository has docs
+        run: |
+          test -f README.md
+          test -f frontend/README.md
+          test -f backend/README.md
+          test -f system-design/README.md
+          test -f dsa/README.md
+
